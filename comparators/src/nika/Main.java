@@ -41,5 +41,21 @@ public class Main {
         for(Player i : players){
             System.out.println(i.toString());
         }
+
+        ArrayList<Person> persons = new ArrayList<>();
+        persons.add(new Person("Nika", "Jamburia"));
+        persons.add(new Person("Levan", "Jamburia"));
+        persons.add(new Person("Beqa", "Arabidze"));
+        persons.add(new Person("Nika", "Zandukeli"));
+        persons.add(new Person("Giorgi", "Krawashvili"));
+
+        Collections.sort(persons);
+
+        System.out.println("///////////////////");
+        System.out.println();
+
+        for(Person i : persons){
+            System.out.println(i.toString());
+        }
     }
 }
